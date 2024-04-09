@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres-sql-books
+    url: jdbc:postgresql://localhost:5432/book_social
     username: user
     password: password
     driver-class-name: org.postgresql.Driver
@@ -34,3 +34,6 @@ application:
     jwt:
       secret-key: C93A1F34381F4B36865E51839F137
       expiration: 8640000
+  mail:
+    frontend:
+      activation-url: http://localhost:4200/activate-account
